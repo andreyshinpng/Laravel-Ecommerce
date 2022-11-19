@@ -49,7 +49,7 @@ header a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 -15px;
+    margin: -15px;
 }
 
 .product {
@@ -57,7 +57,7 @@ header a:hover {
     flex-direction: column;
     justify-content: normal;
     box-sizing: border-box;
-    width: 260px;
+    width: 250px;
     height: 220px;
-    margin: 0 15px;
+    margin: 15px;
 }
