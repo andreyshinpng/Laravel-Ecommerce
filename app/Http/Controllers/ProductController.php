@@ -11,8 +11,7 @@ class ProductController extends Controller
     {
         $products = Product::query()
             ->orderBy('updated_at', 'desc')
-            ->paginate(8);
-//        $products = Product::all();
+            ->paginate(15);
         return view('products.index', [
             'products' => $products
         ]);
