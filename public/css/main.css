@@ -1,63 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-}
-
-a {
-    text-decoration: none;
-}
-
-p {
-    margin: 6px 0;
-    line-height: 1.4;
-}
-
-.container {
-    margin: 0 auto;
-    width: 1200px;
-}
-
 header {
-    background: #000000;
-    color: #fff;
-    line-height: 50px;
-    margin-bottom: 20px;
+    background: #1e1e1e;
 }
 
 header a {
     color: #fff;
+    text-decoration: none;
 }
 
-header a:hover {
-    color: #005bff;
-}
-
-.navbar {
-    display: inline-flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.navbar a + a {
+.navbar_right a + a {
     margin-left: 20px;
 }
 
-.product_wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: -15px;
+#content_section {
+    margin-top: 20px;
 }
 
-.product {
-    display: flex;
-    flex-direction: column;
-    justify-content: normal;
-    box-sizing: border-box;
-    width: 250px;
-    height: 220px;
-    margin: 15px;
+#product_row + #product_row {
+    margin-top: 20px;
+}
+
+#product {
+    padding: 16px 16px;
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+
+#product + #product {
+    margin-left: 20px;
+}
+
+#product p, #product h4 {
+    margin: 0;
+}
+
+#product_description {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#pagination {
+
 }
