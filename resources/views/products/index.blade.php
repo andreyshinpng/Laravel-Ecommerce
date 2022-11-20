@@ -15,10 +15,7 @@
             </div>
         @endif
     @endforeach
-    <div id="pagination" class="mt-3">
-        <b>Pages:</b>
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
+    <div class="mt-4">
+        {{ $products->links('pagination::bootstrap-5') }}
     </div>
 @endsection
