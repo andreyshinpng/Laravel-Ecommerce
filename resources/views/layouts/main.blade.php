@@ -29,32 +29,7 @@
 <section id="content_section">
     <div class="container">
         <div class="content">
-            <div class="row" id="product_row">
-                @for ($i = 1; $i <= 5; $i++)
-                    <div class="col" id="product">
-                        <h4>Test product</h4>
-                        <p id="product_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lobortis posuere.</p>
-                        <p style="font-weight: bold">Price: $1.23</p>
-                        <button class="btn btn-success mt-2">Add to Cart</button>
-                    </div>
-                @endfor
-            </div>
-            <div class="row" id="product_row">
-                @for ($i = 1; $i <= 5; $i++)
-                    <div class="col" id="product">
-                        <h4>Test product</h4>
-                        <p id="product_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lobortis posuere.</p>
-                        <p style="font-weight: bold">Price: $1.23</p>
-                        <button class="btn btn-success mt-2">Add to Cart</button>
-                    </div>
-                @endfor
-            </div>
-            <div id="pagination" class="mt-3">
-                <b>Pages:</b>
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-            </div>
+            @yield('content')
         </div>
     </div>
 </section>

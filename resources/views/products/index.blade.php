@@ -1,13 +1,24 @@
 @extends('layouts.main')
 
 @section('content')
-    <div class="product_wrapper">
-        @foreach ($products as $product)
-            <div class="product">
-                <h3>{{ $product->title }}</h3>
-                <p>Description: {{ $product->description }}</p>
-                <p><b>Price: ${{ $product->price }}</b></p>
+    @foreach($products as $key => $product)
+        @if (($key + 1) % 5 === 1)
+            <div class="row" id="product_row">
+        @endif
+        <div class="col" id="product">
+            <b>{{ $product->title }}</b>
+            <p id="product_description">{{ $product->description }}</p>
+            <p><b>${{ $product->price }}</b></p>
+            <button class="btn btn-success mt-2">Add to Cart</button>
+        </div>
+        @if (($key + 1) % 5 === 0)
             </div>
-        @endforeach
+        @endif
+    @endforeach
+    <div id="pagination" class="mt-3">
+        <b>Pages:</b>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
     </div>
 @endsection
