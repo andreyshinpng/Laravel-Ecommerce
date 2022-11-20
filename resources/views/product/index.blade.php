@@ -7,9 +7,9 @@
             <div class="row" id="product_row">
         @endif
         <div class="col" id="product">
-            <b>{{ $product->title }}</b>
-            <p id="product_description">{{ $product->description }}</p>
-            <p><b>${{ $product->price }}</b></p>
+            <a href="/product/{{ $product->id }}"><b>{{ $product->title }}</b></a>
+            <p class="product_description">{{ $product->description }}</p>
+            <p class="product_price"><b>${{ $product->price }}</b></p>
             <button class="btn btn-success btn-sm mt-2"><i class="bi bi-plus-lg"></i> Add to Cart</button>
         </div>
         @if (($key + 1) % 5 === 0)
