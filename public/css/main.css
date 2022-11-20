@@ -1,5 +1,6 @@
 header {
     background: #1e1e1e;
+    color: #fff;
 }
 
 header a {
@@ -7,8 +8,12 @@ header a {
     text-decoration: none;
 }
 
+.navbar_right a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .navbar_right a + a {
-    margin-left: 20px;
 }
 
 #content_section {
