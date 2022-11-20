@@ -1,5 +1,5 @@
 <h1>E-commerce on Laravel</h1>
-Built with:<br>
+<h2>Built with:</h2>
 - Laravel<br>
 - Bootstrap.css<br>
 - Bootstrap Iconpack<br>
