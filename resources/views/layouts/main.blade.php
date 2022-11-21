@@ -20,8 +20,8 @@
             </div>
             <div class="navbar_right">
                 <a href="#" class="btn btn-link"><i class="bi bi-bag"></i> Cart</a>
-                <a href="#" class="btn btn-link"><i class="bi bi-box-arrow-in-left"></i> Login</a>
-                <a href="#" class="btn btn-outline-light">Register</a>
+                <a href="/login" class="btn btn-link"><i class="bi bi-box-arrow-in-left"></i> Login</a>
+                <a href="/register" class="btn btn-outline-light">Register</a>
             </div>
         </div>
     </div>
