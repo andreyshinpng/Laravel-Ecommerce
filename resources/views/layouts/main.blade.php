@@ -24,7 +24,7 @@
                     <a href="/register" class="btn btn-outline-light">Register</a>
                 @else
                     <a href="#" class="btn btn-link"><i class="bi bi-bag"></i> Cart</a>
-                    <a href="{{ route('dashboard') }}" class="btn btn-link">Profile</a>
+                    <a href="{{ route('dashboard') }}" class="btn btn-link">Profile ({{ Auth::user()->name }})</a>
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
                         <button type="submit" value="{{ route('logout') }}" class="btn btn-outline-light">Logout</button>
