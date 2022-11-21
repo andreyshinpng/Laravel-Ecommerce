@@ -4,6 +4,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+form {
+    display: inline;
+}
+
 header {
     background: #1e1e1e;
     color: #fff;
